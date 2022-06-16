@@ -4,6 +4,11 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  background-color: rgb(212, 212, 212);
+}
+
 .teclado > div {
   margin-bottom: 8px;
 }
@@ -28,13 +33,12 @@ $shadow: -2px 2px 3px black, 2px -2px 3px rgba(227, 220, 220, 0.721);
 
 .container {
   min-width: 1000px;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(212, 212, 212);
 
   ul {
     display: flex;
@@ -79,6 +83,7 @@ $shadow: -2px 2px 3px black, 2px -2px 3px rgba(227, 220, 220, 0.721);
   padding-top: 0;
   color: rgb(77, 77, 77);
   transition: background-color 0.3s;
+  user-select: none;
 
   &.white {
     --selected: rgb(247, 247, 247);
@@ -270,7 +275,7 @@ $shadow: -2px 2px 3px black, 2px -2px 3px rgba(227, 220, 220, 0.721);
 }
 
 .rotateTop {
-  transform: rotate(90deg) translateY(1px);
+  transform: rotate(90deg);
 }
 .rotateDown {
   transform: rotate(-90deg) translateX(-2px);

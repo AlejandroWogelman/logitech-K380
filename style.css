@@ -6,13 +6,17 @@
   margin: 0;
 }
 
+body {
+  background-color: #d4d4d4;
+}
+
 .teclado > div {
   margin-bottom: 8px;
 }
 
 .container {
   min-width: 1000px;
-  min-height: 100vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +31,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: #d4d4d4;
 }
 
 .container ul {
@@ -83,6 +86,10 @@
   color: #4d4d4d;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .teclado.white {
@@ -379,8 +386,8 @@
 }
 
 .rotateTop {
-  -webkit-transform: rotate(90deg) translateY(1px);
-          transform: rotate(90deg) translateY(1px);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .rotateDown {
